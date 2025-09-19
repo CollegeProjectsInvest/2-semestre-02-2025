@@ -7,7 +7,12 @@ class Pessoa:
 
     # método construtor
     # inicializar a classe
-    def __init__(self, nome: str, email: str, idade: int) -> None:
+    # pode também inicializar atributos
+    def __init__(self,
+                 nome: str,
+                 email: str,
+                 idade: int
+                 ) -> None:
         self.nome = nome
         self.__email = email
         self._idade = idade
