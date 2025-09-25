@@ -2,7 +2,7 @@ from Pessoa import Pessoa
 
 
 def main() -> None:
-    nome = input("Digite seu nome: ")
+    nome: str = input("Digite seu nome: ")
     pessoa = Pessoa(nome)
 
     while True:
@@ -16,11 +16,11 @@ def main() -> None:
         if option == 0:
             pessoa.conta_bancaria.visualizar_saldo()
         elif option == 1:
-            value = float(input("Digite um valor: "))
-            pessoa.conta_bancaria.depositar(value)
+            valor = float(input("Digite um valor: "))
+            pessoa.conta_bancaria.depositar(valor)
         elif option == 2:
-            value = float(input("Digite um valor: "))
-            pessoa.conta_bancaria.sacar(value)
+            valor = float(input("Digite um valor: "))
+            pessoa.conta_bancaria.sacar(valor)
         elif option == -1:
             print("Volte sempre")
             break
