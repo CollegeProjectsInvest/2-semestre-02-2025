@@ -1,9 +1,9 @@
 # class pai
 class Membro:
-    def __init__(self):
-        self.nome = "Marcos"
-        self.idade = 23 + 1
-        self.vida = 100
+    def __init__(self, nome: str, idade: int, vida: int):
+        self.nome = nome
+        self.idade = idade
+        self.vida = vida
 
     def pegar_kit_membro(self) -> None:
         print("Pegando kit membro")
